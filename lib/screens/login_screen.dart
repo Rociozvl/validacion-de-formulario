@@ -84,7 +84,7 @@ class _LoginForm extends StatelessWidget {
                         labelText: 'Password',
                         prefixIcon: Icons.lock_outline
                         ),
-                        onChanged: (value )=> loginForm.Password = value,
+                        onChanged: (value )=> loginForm.password = value,
                          validator: (value){
                            return ( value != null && value.length >= 6) 
                             ? null
@@ -102,7 +102,7 @@ class _LoginForm extends StatelessWidget {
                        if( !loginForm.isValidForm()) return;
                        loginForm.isLoading = true;
 
-                       await Future.delayed(Duration(seconds: 2));
+                       await Future.delayed(const Duration(seconds: 2));
 
                        Navigator.pushReplacementNamed(context, 'home');
                       },

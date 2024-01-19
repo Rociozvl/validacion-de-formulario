@@ -5,7 +5,7 @@ class LoginFormProvider extends ChangeNotifier{
    GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
    String email ='';
-   String Password= '';
+   String password= '';
 
    bool _isLoading = false;
    bool get isLoading => _isLoading;
