@@ -1,5 +1,5 @@
 # productos_app
-CRUD de productos
+CRUD  Actualizar y crear  productos
 
 
 A new Flutter project.
